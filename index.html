@@ -1,11 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kas Kelas — Beranda</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-icon">▣</span> Kas Kelas</a>
+    <button class="menu-toggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a class="active" href="index.html">Beranda</a>
+      <a href="transaksi.html">Transaksi</a>
+      <a href="rekap.html">Rekap</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">KEUANGAN KELAS, LEBIH TERATUR</span>
+        <h1>Kelola Kas Kelas<br><span>Lebih Mudah.</span></h1>
+        <p>Catat pemasukan dan pengeluaran kelas dengan praktis. Semua transaksi tersusun rapi dan saldo dapat dipantau bersama.</p>
+        <div class="actions">
+          <a class="button primary" href="transaksi.html">Lihat Transaksi <span>→</span></a>
+          <a class="button secondary" href="tentang.html">Pelajari Lebih Lanjut</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+        <div class="wallet"><div class="wallet-flap"></div><div class="wallet-button"></div><span>Rp</span></div>
+        <div class="plant plant-one">✦<br>♧<br>♧</div><div class="plant plant-two">♧<br>♧</div>
+        <div class="coin coin-one">+</div><div class="coin coin-two">Rp</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div><span class="eyebrow">RINGKASAN</span><h2>Keuangan kelas hari ini</h2></div>
+        <a class="text-link" href="rekap.html">Lihat rekap →</a>
+      </div>
+      <div class="stats-grid">
+        <article class="stat-card green"><span class="stat-icon">↗</span><div><p>Total Pemasukan</p><h3 id="income-total">Rp 0</h3></div></article>
+        <article class="stat-card red"><span class="stat-icon">↘</span><div><p>Total Pengeluaran</p><h3 id="expense-total">Rp 0</h3></div></article>
+        <article class="stat-card blue"><span class="stat-icon">▣</span><div><p>Saldo Saat Ini</p><h3 id="balance-total">Rp 0</h3></div></article>
+      </div>
+    </section>
+
+    <section class="feature-grid">
+      <article class="feature"><div class="feature-icon">◇</div><h3>Transparan</h3><p>Catatan pemasukan dan pengeluaran mudah diperiksa.</p></article>
+      <article class="feature"><div class="feature-icon">ϟ</div><h3>Mudah Digunakan</h3><p>Form sederhana untuk menambah transaksi baru.</p></article>
+      <article class="feature"><div class="feature-icon">♧</div><h3>Untuk Semua Anggota</h3><p>Ringkasan keuangan dapat dibuka kapan saja.</p></article>
+      <article class="feature"><div class="feature-icon">▯</div><h3>Responsif</h3><p>Tampilan menyesuaikan layar laptop maupun ponsel.</p></article>
+    </section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="index.html">▣ Kas Kelas</a><span>Bersama menjaga keuangan kelas ✦</span><span>© <span class="year"></span> Kas Kelas</span></footer>
 </body>
 </html>
