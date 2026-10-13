@@ -1,1 +1,42 @@
-
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kas Kelas — Transaksi</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-icon">▣</span> Kas Kelas</a>
+    <button class="menu-toggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+    <nav class="nav"><a href="index.html">Beranda</a><a class="active" href="transaksi.html">Transaksi</a><a href="rekap.html">Rekap</a><a href="tentang.html">Tentang</a></nav>
+  </header>
+  <main class="page-main">
+    <div class="page-title"><div class="title-icon">▤</div><div><span class="eyebrow">CATATAN KEUANGAN</span><h1>Transaksi</h1><p>Lihat dan catat semua pemasukan serta pengeluaran kas kelas.</p></div></div>
+    <div class="stats-grid compact">
+      <article class="stat-card green"><span class="stat-icon">↗️</span><div><p>Total Pemasukan</p><h3 id="income-total">Rp 0</h3></div></article>
+      <article class="stat-card red"><span class="stat-icon">↘️</span><div><p>Total Pengeluaran</p><h3 id="expense-total">Rp 0</h3></div></article>
+      <article class="stat-card blue"><span class="stat-icon">▣</span><div><p>Saldo Saat Ini</p><h3 id="balance-total">Rp 0</h3></div></article>
+    </div>
+    <div class="content-grid">
+      <section class="panel">
+        <div class="panel-heading"><div><h2>Daftar Transaksi</h2><p>Catatan terbaru akan muncul di bagian atas.</p></div><select id="transaction-filter" aria-label="Filter transaksi"><option value="all">Semua</option><option value="income">Pemasukan</option><option value="expense">Pengeluaran</option></select></div>
+        <div class="table-wrap"><table><thead><tr><th>Tanggal</th><th>Keterangan</th><th>Jenis</th><th>Nominal</th><th>Aksi</th></tr></thead><tbody id="transaction-list"></tbody></table></div>
+        <p id="empty-state" class="empty-state" hidden>Belum ada transaksi. Tambahkan transaksi melalui formulir.</p>
+        <p class="small-note">Data contoh akan tersimpan di browser ini saja (localStorage).</p>
+      </section>
+      <section class="panel form-panel">
+        <div class="panel-heading"><div><h2>Tambah Transaksi</h2><p>Isi detail transaksi di bawah.</p></div></div>
+        <form id="transaction-form">
+          <label for="transaction-date">Tanggal</label><input id="transaction-date" type="date" required>
+          <label for="transaction-description">Keterangan</label><input id="transaction-description" type="text" maxlength="80" placeholder="Contoh: Iuran kelas, beli spidol..." required>
+          <label for="transaction-type">Jenis</label><select id="transaction-type" required><option value="income">Pemasukan</option><option value="expense">Pengeluaran</option></select>
+          <label for="transaction-amount">Nominal (Rp)</label><input id="transaction-amount" type="number" min="1" step="1" placeholder="Masukkan nominal" required>
+          <button class="button primary full-width" type="submit">＋ Simpan Transaksi</button>
+          <p id="form-message" class="form-message" role="status"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="index.html">▣ Kas Kelas</a><span>Bersama menjaga keuangan kelas ✦</span><span>© <span class="year"></span> Kas Kelas</span></footer>
+</body>
+</html>
