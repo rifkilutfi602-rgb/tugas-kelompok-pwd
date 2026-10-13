@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap');
 :root {
-<<<<<<< HEAD
     --navy: #298017;
-    --blue: #5ca2ee;
-=======
->>>>>>> c757a9dea21a8816609c217aa421a109fff4053b
+    --blue: #8bc0f9;
     --blue-dark: #195a9b;
     --pale: #4b1037;
     --text: #24435f;
@@ -24,11 +21,7 @@ body {
     margin:0;
     background:#f6faff;
     color:var(--text);
-<<<<<<< HEAD
     font-family:'Courier New', Courier, monospace;
-=======
-    font-family:'Courier New',Courier,monospace,'Nunito Sans',sans-serif;
->>>>>>> c757a9dea21a8816609c217aa421a109fff4053b
     font-size:15px;
     line-height:1.6
 }
