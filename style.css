@@ -21,7 +21,7 @@ body {
     margin:0;
     background:#f6faff;
     color:var(--text);
-    font-family:'Nunito Sans',system-ui,-apple-system,sans-serif;
+    font-family:'Courier New',Courier,monospace,'Nunito Sans',sans-serif;
     font-size:15px;
     line-height:1.6
 }
