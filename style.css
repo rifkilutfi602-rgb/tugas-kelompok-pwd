@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap');
 :root {
-    --navy: #174b80;
+    --navy: #298017;
     --blue: #2676c9;
     --blue-dark: #195a9b;
-    --pale: #eaf5ff;
+    --pale: #4b1037;
     --text: #24435f;
     --muted: #6d8298;
-    --line: #dce9f5;
+    --line: #24639f;
     --green: #15996b;
     --red: #e04f56;
     --shadow: 0 10px 30px rgba(31,83,130,.07)
@@ -235,7 +235,7 @@ a {
     right:15px;
     top:-22px;
     height:34px;
-    background:#78b5ee;
+    background:#d4ee78;
     border-radius:12px 12px 0 0;
     transform:skewY(-8deg)
 }
@@ -727,7 +727,7 @@ tbody tr:hover {
     gap:32px;
     align-items:center;
     padding:35px;
-    background:linear-gradient(120deg,#e8f5ff,#fff)
+    background:linear-gradient(120deg, #E4F3E7, #F8FFF9)
 }
 .about-hero h2 {
     font-size:28px;
@@ -742,14 +742,14 @@ tbody tr:hover {
 .about-illustration {
     height:190px;
     border-radius:50%;
-    background:#d9edff;
+    background:#D2E8D5;
     display:grid;
     place-items:center;
     position:relative
 }
 .about-wallet {
     font-size:75px;
-    color:var(--blue);
+    color: #4D9565;
     transform:rotate(-12deg)
 }
 .about-spark {
@@ -768,9 +768,11 @@ tbody tr:hover {
 }
 .callout {
     font-weight:900;
-    color:var(--blue)!important
+    color: #4D9565 !important
 }
-.about-features {
+.about-features .feature-icon {
+    background: #E0F0E3;
+    color: #4D9565;
     padding:0;
     margin-bottom:28px
 }
