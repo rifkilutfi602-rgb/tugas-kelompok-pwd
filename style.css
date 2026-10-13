@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap');
 :root {
-    --navy: #298017;
+    --navy: #861540;
     --blue: #2676c9;
     --blue-dark: #195a9b;
     --pale: #4b1037;
@@ -21,7 +21,7 @@ body {
     margin:0;
     background:#f6faff;
     color:var(--text);
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Courier New',Courier,monospace,'Nunito Sans',sans-serif;
     font-size:15px;
     line-height:1.6
 }
