@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap');
 :root {
-    --navy: #174b80;
+    --navy: #298017;
     --blue: #2676c9;
     --blue-dark: #195a9b;
-    --pale: #eaf5ff;
+    --pale: #4b1037;
     --text: #24435f;
     --muted: #6d8298;
-    --line: #dce9f5;
+    --line: #24639f;
     --green: #15996b;
     --red: #e04f56;
     --shadow: 0 10px 30px rgba(31,83,130,.07)
@@ -235,7 +235,7 @@ a {
     right:15px;
     top:-22px;
     height:34px;
-    background:#78b5ee;
+    background:#d4ee78;
     border-radius:12px 12px 0 0;
     transform:skewY(-8deg)
 }
