@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap');
 :root {
-    --navy: #298017;
+    --tosca: #2a99c9;
     --blue: #2676c9;
     --blue-dark: #195a9b;
     --pale: #4b1037;
-    --text: #24435f;
+    --text: #000000;
     --muted: #6d8298;
     --line: #24639f;
     --green: #15996b;
@@ -770,6 +770,7 @@ tbody tr:hover {
     font-weight:900;
     color: #4D9565 !important
 }
+/*Komentar*/
 .about-features .feature-icon {
     background: #E0F0E3;
     color: #4D9565;
